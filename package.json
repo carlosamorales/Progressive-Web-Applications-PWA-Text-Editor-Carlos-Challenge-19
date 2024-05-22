@@ -2,21 +2,21 @@
   "name": "JATE",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
-    "client": "webpack-dev-server --open --config client/webpack.config.js",
-    "build": "webpack --config client/webpack.config.js --mode production",
+    "client": "cd client && webpack-dev-server --open --config webpack.config.js",
+    "build": "cd client && webpack --config webpack.config.js --mode production",
     "start:dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "core-js": "^3.37.1",
     "express": "^4.17.1",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "core-js": "^3.37.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",

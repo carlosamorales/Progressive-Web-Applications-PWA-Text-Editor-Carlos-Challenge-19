@@ -35,6 +35,8 @@ Chat GPT
 ## Tests
 
 Build Command: npm install && cd client && npm install && npm run build && cd ..
+
+
 Start Command: npm start 
 
 ## Questions
